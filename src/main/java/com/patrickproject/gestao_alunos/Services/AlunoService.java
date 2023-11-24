@@ -14,4 +14,7 @@ public class AlunoService {
         return alunoRepository.save(alunoEntity);
     }
 
+    public void Delete(Long id) {
+        alunoRepository.deleteById(id);
+    }
 }
