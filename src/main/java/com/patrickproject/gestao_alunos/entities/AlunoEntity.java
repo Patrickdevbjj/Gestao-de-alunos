@@ -15,6 +15,10 @@ public class AlunoEntity {
 
     @Id
     long id;
+
     String name;
+
     int frequencia;
+
+    String email;
 }

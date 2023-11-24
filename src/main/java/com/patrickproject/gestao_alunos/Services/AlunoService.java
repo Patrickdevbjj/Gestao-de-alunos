@@ -4,6 +4,7 @@ import com.patrickproject.gestao_alunos.Repositories.AlunoRepository;
 import com.patrickproject.gestao_alunos.entities.AlunoEntity;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 @Service
 public class AlunoService {
@@ -14,4 +15,8 @@ public class AlunoService {
         return alunoRepository.save(alunoEntity);
     }
 
+    @Transactional
+    public void Delete(Long id) {
+        alunoRepository.deleteById(id);
+    }
 }
