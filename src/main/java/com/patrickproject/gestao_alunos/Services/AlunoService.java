@@ -6,6 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.Optional;
+
 @Service
 public class AlunoService {
     @Autowired
@@ -19,4 +21,18 @@ public class AlunoService {
     public void Delete(Long id) {
         alunoRepository.deleteById(id);
     }
+
+
+    public AlunoEntity update(Long id, AlunoEntity alunoEntity) {
+        Optional<AlunoEntity> alunoOptional = Optional.ofNullable(alunoRepository.findById(id));
+        if (alunoOptional.isPresent()) {
+            AlunoEntity alunoExistente = alunoOptional.get();
+            alunoExistente.setEmail(alunoEntity.getEmail());
+            return alunoRepository.save(alunoExistente);
+        } else {
+            return alunoEntity;
+        }
+    }
+
+
 }
