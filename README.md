@@ -13,6 +13,6 @@ Projeto para Praticar os conceitos básicos do Spring Boot
 [SpringBoot]:https://img.shields.io/badge/Springboot-68AC3C?style=for-the-badge&logo=springboot&logoColor=white
 [SpringBoot-url]:https://spring.io/
 [Postgres]:https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white
-[MySQL-url]:https://www.postgresql.org/
+[Postgres-url]:https://www.postgresql.org/
 [Docker]:https://badgen.net/badge/icon/docker?icon=docker&label
 [Docker-url]:https://docker.com
