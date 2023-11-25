@@ -5,7 +5,7 @@ Projeto para Praticar os conceitos básicos do Spring Boot
 
 * [![Java][Java]][Java-url]
 * [![Spring Boot][SpringBoot]][SpringBoot-url]
-* [![Postegres][MySQL]][MySQL-url]
+* [![Postegres][Postgres]][Postgres-url]
 * [![Docker][Docker]][Docker-url]
 
 [Java-url]:https://www.java.com/pt-BR/
