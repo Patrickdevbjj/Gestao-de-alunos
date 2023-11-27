@@ -19,11 +19,10 @@ public class AlunoController {
     @Autowired
     private AlunoRepository alunoRepository;
 
-
     @GetMapping
-    public ResponseEntity<AlunoEntity> findAll() {
-    AlunoEntity alunoEntity = new AlunoEntity(1234,"Patrick", 80, "Patrick@gmail.com");
-    return ResponseEntity.ok().body(alunoEntity);
+    public ResponseEntity<List<AlunoEntity>> findAll() {
+    List<AlunoEntity> alunos = alunoService.findAll();
+    return ResponseEntity.ok().body(alunos);
     }
 
     @PostMapping
