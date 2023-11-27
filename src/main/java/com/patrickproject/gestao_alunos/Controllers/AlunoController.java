@@ -21,8 +21,8 @@ public class AlunoController {
 
     @GetMapping
     public ResponseEntity<List<AlunoEntity>> findAll() {
-    List<AlunoEntity> alunos = alunoService.findAll();
-    return ResponseEntity.ok().body(alunos);
+        List<AlunoEntity> alunos = alunoService.findAll();
+        return ResponseEntity.ok().body(alunos);
     }
 
     @PostMapping
