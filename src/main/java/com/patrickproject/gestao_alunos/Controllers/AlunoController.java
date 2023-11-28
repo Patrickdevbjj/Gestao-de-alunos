@@ -38,7 +38,7 @@ public class AlunoController {
         return ResponseEntity.ok().build();
     }
 
-    @PutMapping(value = "/alunos/{id}")
+    @PutMapping(value = "/{id}")
     public ResponseEntity<AlunoEntity> updateAluno(@PathVariable Long id, @RequestBody AlunoEntity alunoEntity) {
         Optional<AlunoEntity> alunoOptional = Optional.ofNullable(alunoRepository.findById(id));
         if (alunoOptional.isPresent()) {
