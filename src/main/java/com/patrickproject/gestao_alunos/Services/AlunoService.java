@@ -17,6 +17,10 @@ public class AlunoService {
         return alunoRepository.save(alunoEntity);
     }
 
+    public List<AlunoEntity> findAll() {
+        return alunoRepository.findAll();
+    }
+    
     @Transactional
     public void Delete(Long id) {
         alunoRepository.deleteById(id);
